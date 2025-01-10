@@ -1,4 +1,5 @@
 /* TC Name: EADMF26-24_TC_03 (Sprint 1)
+
    TC Description: Verify 14 classification records created in Maximo for 'BUSINESS PRODUCT' level classification .
    ENV: Dev
  
@@ -60,9 +61,9 @@ public class EADMF26_24_TC_03 extends BaseClass {
 	}	
 	
 	@Test(priority=2,dataProvider="ClassificationData",dataProviderClass=DataProviders.class,dependsOnMethods= {"verify_Login"}) //getting data provider from different class
-	public void verify_ClassificationPage(String ClassificationPath,String Classification,String Desc,String ProdDesc,String ProdLongDesc,String Order) throws InterruptedException {
+	public void verify_Classification_BusinessProduct(String ClassificationPath,String Classification,String Desc,String ProdDesc,String ProdLongDesc,String Order) throws InterruptedException {
 		
-		logger.info("***********Classification Test Started***********");
+		logger.info("***********Classification Test BUSINESS PRODUCT level Started***********");
 		
 		Thread.sleep(1000);
 		cp.clickQuickSearchMenu();
@@ -173,7 +174,7 @@ public class EADMF26_24_TC_03 extends BaseClass {
 		 boolean valLoc = cp.isLocationExists();
 		 
 		 Assert.assertTrue(valLoc);
-		 logger.info("*********** Classification Test Finished***********");
+		 logger.info("*********** Classification Test BUSINESS PRODUCT level Finished***********");
 		 	}
 	
 	@Test(priority=3,dependsOnMethods= {"verify_Login"})
@@ -185,7 +186,7 @@ public class EADMF26_24_TC_03 extends BaseClass {
 		Thread.sleep(500);
 		driver.findElement(By.xpath("//button[@id='profile']")).click();
 		driver.findElement(By.xpath("//span[@id='suite-header-profile-menu-logout']")).click();
-		driver.findElement(By.xpath("//button[normalize-space()='Log out']")).click();//Click logout button in displayed window
+		driver.findElement(By.xpath("//button[normalize-space()='Log out']")).click();  //Click logout button in displayed window
 		driver.quit();
 		
 		logger.info("*********** Logout Test Finished***********");

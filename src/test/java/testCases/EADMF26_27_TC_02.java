@@ -1,12 +1,12 @@
 /* Test Case Name : EADMF26-27_TC_02 (Sprint 1)
 
-
- * Description: Verify 38 classification records created in Maximo for 'Service Chain' level classification .
+  Description: Verify 38 classification records created in Maximo for 'Service Chain' level classification .
  */
 
 package testCases;
 
 import org.testng.Assert;
+
 import org.testng.annotations.Test;
 
 import pageObjects.ClassificationsPage;
@@ -25,7 +25,7 @@ public class EADMF26_27_TC_02 extends BaseClass {
 		}
 			 
 		@Test(priority=2,dataProvider="ClassificationServiceChainData",dataProviderClass=DataProviders.class,dependsOnMethods= {"Login"}) //getting data provider from different class
-		public void verify_ClassificationSchemePage(String ClassificationPath,String Classification,String Desc,String ProdDesc,String ProdLongDesc,String Order,String ClassCode) throws InterruptedException {
+		public void verify_ClassificationServiceChain(String ClassificationPath,String Classification,String Desc,String ProdDesc,String ProdLongDesc,String Order,String ClassCode) throws InterruptedException {
 			
 			logger.info("***********Classification Service Chain Level Test Started***********");
 			
@@ -86,7 +86,6 @@ public class EADMF26_27_TC_02 extends BaseClass {
 					 
 			 //Validating the Location
 			 boolean valLoc = cp.isLocationExists();
-			 
 			 Assert.assertTrue(valLoc);
 			 
 			//Validating the Classification Code

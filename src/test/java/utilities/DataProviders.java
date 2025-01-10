@@ -92,7 +92,7 @@ public class DataProviders {
 		
 	}
 	@DataProvider(name="ClassificationServiceChainData")
-	public String [][] getClassificationClassificationServiceChainData() throws IOException
+	public String [][] getClassificationServiceChainData() throws IOException
 	
 	{
 		String path=".\\testData\\Classification_SC.xlsx";		//taking the data from xl
@@ -116,6 +116,35 @@ public class DataProviders {
 		}
 			
 		return ClassificationData; //returning 2 dimension array
+		
+	}
+	
+	@DataProvider(name="ClassificationFacilityData")
+	public String [][] getClassificationFacilityData() throws IOException
+	
+	{
+		String path=".\\testData\\Classification_Facility.xlsx";	
+		//String path=".\\testData\\Facility.xlsx";	
+	
+		Excelutility xlutl=new Excelutility(path);			
+			
+		int totalrows=xlutl.getRowCount("Sheet1");
+		int totalcols=xlutl.getCellCount("Sheet1",1);
+		
+		System.out.println("The no of rows are:"+totalrows);
+		System.out.println("The no of columns are:"+totalcols);
+		
+		String ClassificationData[][]=new String[totalrows][totalcols]; 
+		
+		for (int i=1;i<=totalrows;i++)		
+		{
+			for (int j=0;j<totalcols;j++)		
+			{
+				ClassificationData[i-1][j]=xlutl.getCellData("Sheet1", i, j); //1,0
+			}
+		}
+			
+		return ClassificationData; 
 		
 	}
 

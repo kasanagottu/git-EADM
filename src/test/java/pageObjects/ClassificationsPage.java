@@ -50,6 +50,9 @@ public class ClassificationsPage extends BasePage {
 	
 	@FindBy(xpath="//input[@id='me0ad6ac7-tb']") WebElement txtClassificationCode;
 	
+	@FindBy(xpath="//input[@id='m58110da2-tb']") WebElement txtSequenceLen;
+	
+		
 	public void clickOpenMenu()
 	{
 		try {
@@ -165,4 +168,9 @@ public class ClassificationsPage extends BasePage {
 		
 	}
 	
+	public String getSequenceLenth()
+	{
+		return(txtSequenceLen.getAttribute("value"));
+		
+	}
 	}

@@ -9,9 +9,10 @@
   <test thread-count="5" name="Test">
     <classes>
      
-     <!--   <class name="testCases.EADMF26_24_TC_03"/> -->
-     <!--   <class name="testCases.EADMF26_26_TC_02"/> --> 
-        	<class name="testCases.EADMF26_27_TC_02"/> 
+   	<!-- 	     <class name="testCases.EADMF26_24_TC_03"/> 
+    			  <class name="testCases.EADMF26_26_TC_02"/>
+    			  <class name="testCases.EADMF26_27_TC_02"/> --> 
+    			  <class name="testCases.EADMF26_28_TC_02"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

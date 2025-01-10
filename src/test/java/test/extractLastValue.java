@@ -8,18 +8,18 @@ public class extractLastValue {
 
 	public static void main(String[] args) throws IOException {
 		
-		String path="C:\\Users\\VENKATESHAMKASANAGOT\\Documents\\Local Files\\Service Chain.xlsx";
+		String path="C:\\Users\\VENKATESHAMKASANAGOT\\Documents\\Local Files\\Facility.xlsx";
 		
 		Excelutility xlutl=new Excelutility(path);	
-		int totalrows=xlutl.getRowCount("Service Chain");
-		int totalcols=xlutl.getCellCount("Service Chain",1);
+		int totalrows=xlutl.getRowCount("Sheet1");
+		int totalcols=xlutl.getCellCount("Sheet1",1);
 		
 		System.out.println("The no of rows are:"+totalrows);
 		System.out.println("The no of colum are:"+totalcols);
 		
 		for(int i=1;i<totalrows;i++)
 		{
-		String CellValue=xlutl.getCellData("Service Chain", i, 0);
+		String CellValue=xlutl.getCellData("Sheet1", i, 0);
 		
 		String lastItem = CellValue.substring(CellValue.lastIndexOf('\\') + 1);
 		

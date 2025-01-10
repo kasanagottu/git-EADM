@@ -1,5 +1,6 @@
 /* TC Name: EADMF26-26_TC_02 (Sprint 1)
 
+
    TC Description: Verify 14 classification records created in Maximo for 'Scheme' level classification .
    ENV: Dev
  
@@ -26,7 +27,7 @@ public class EADMF26_26_TC_02 extends BaseClass {
 		}
 			
 		@Test(priority=2,dataProvider="ClassificationSchemeData",dataProviderClass=DataProviders.class,dependsOnMethods= {"Login"}) //getting data provider from different class
-		public void verify_ClassificationSchemePage(String ClassificationPath,String Classification,String Desc,String ProdDesc,String ProdLongDesc,String Order) throws InterruptedException {
+		public void verify_ClassificationScheme(String ClassificationPath,String Classification,String Desc,String ProdDesc,String ProdLongDesc,String Order) throws InterruptedException {
 			
 			logger.info("***********Classification Scheme Level Test Started***********");
 			
