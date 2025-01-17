@@ -1,147 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="40" passed="40" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-10T14:44:27 IST" name="Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Suite]]]]]]" finished-at="2025-01-10T14:46:38 IST" duration-ms="130605">
+  <suite started-at="2025-01-17T14:39:24 IST" name="Suite" finished-at="2025-01-17T14:49:10 IST" duration-ms="586300">
     <groups>
     </groups>
-    <test started-at="2025-01-10T14:44:27 IST" name="Test(failed)(failed)(failed)(failed)(failed)(failed)" finished-at="2025-01-10T14:46:38 IST" duration-ms="130605">
-      <class name="testCases.EADMF26_28_TC_02">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.EADMF26_28_TC_02@525575]" started-at="2025-01-10T14:44:27 IST" name="setup" finished-at="2025-01-10T14:44:38 IST" duration-ms="10684" status="PASS">
+    <test started-at="2025-01-17T14:39:24 IST" name="Test" finished-at="2025-01-17T14:49:10 IST" duration-ms="586300">
+      <class name="testCases.SC_level_DataValidation">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:39:24 IST" name="setup" finished-at="2025-01-17T14:39:35 IST" duration-ms="10980" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login()[pri:1, instance:testCases.EADMF26_28_TC_02@525575]" started-at="2025-01-10T14:44:38 IST" name="Login" finished-at="2025-01-10T14:44:43 IST" duration-ms="5681" status="PASS">
+        <test-method signature="Login()[pri:1, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:39:35 IST" name="Login" finished-at="2025-01-17T14:39:39 IST" duration-ms="4258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="verify_ClassificationFacility(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.EADMF26_28_TC_02@525575]" started-at="2025-01-10T14:45:35 IST" name="verify_ClassificationFacility" data-provider="ClassificationFacilityData" finished-at="2025-01-10T14:45:51 IST" depends-on-methods="testCases.EADMF26_28_TC_02.Login" duration-ms="15919" status="PASS">
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:39:44 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:39:59 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="15055" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Facility \ Storage \ Tank \ Non-Potable \ Reuse]]>
+                <![CDATA[Service_Chain]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Reuse]]>
+                <![CDATA[Service_Chain]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Reuse]]>
+                <![CDATA[Service Chain]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Non-Potable Reuse Tank Storage Facility]]>
+                <![CDATA[Service Chain]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[A collection of assets that provide reserve and emergency storage for reuse water before it is distributed to customer to ensure not interrupted water supply (i.e.. due to a leak on the main) and ensure consistent water pressure. Type of tanks: Ground Level Tank or Elevated Tank.]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[2420]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[ST]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[TA]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[_xlfn.CONCAT(G124,H124)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_ClassificationFacility -->
-        <test-method signature="verify_ClassificationFacility(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.EADMF26_28_TC_02@525575]" started-at="2025-01-10T14:45:51 IST" name="verify_ClassificationFacility" data-provider="ClassificationFacilityData" finished-at="2025-01-10T14:46:06 IST" depends-on-methods="testCases.EADMF26_28_TC_02.Login" duration-ms="15695" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Facility \ Storage \ Tank \ Non-Potable \ Water]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Water]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Water]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Non-Potable Water Tank Storage Facility]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[A collection of assets that provide reserve and emergency storage for non-potable water before it is distributed to customer to ensure not interrupted water supply (i.e.. due to a leak on the main) and ensure consistent water pressure. Type of tanks: Ground Level Tank or Elevated Tank.]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[2430]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[ST]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[TA]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[_xlfn.CONCAT(G125,H125)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_ClassificationFacility -->
-        <test-method signature="verify_ClassificationFacility(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.EADMF26_28_TC_02@525575]" started-at="2025-01-10T14:46:06 IST" name="verify_ClassificationFacility" data-provider="ClassificationFacilityData" finished-at="2025-01-10T14:46:22 IST" depends-on-methods="testCases.EADMF26_28_TC_02.Login" duration-ms="15565" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Facility \ Storage \ Tank \ Potable]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Potable]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Potable]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Potable Tank Storage Facility]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[A collection of assets that provide reserve and emergency storage for potable product (water) before it is distributed to customer to ensure not interrupted water supply (i.e. due to a leak on the main) and ensure consistent water pressure. Type of tanks: Ground Level Tank or Elevated Tank.]]>
+                <![CDATA[A major stage that has a specific role in the water utility service chain. It contains all the components necessary to perform its role and is part of a scheme.]]>
               </value>
             </param>
             <param index="5">
@@ -151,28 +49,223 @@
             </param>
             <param index="6">
               <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[_xlfn.CONCAT(G126,H126)]]>
+                <![CDATA[NA]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_ClassificationFacility -->
-        <test-method signature="verify_ClassificationFacility(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.EADMF26_28_TC_02@525575]" started-at="2025-01-10T14:46:22 IST" name="verify_ClassificationFacility" data-provider="ClassificationFacilityData" finished-at="2025-01-10T14:46:38 IST" depends-on-methods="testCases.EADMF26_28_TC_02.Login" duration-ms="15474" status="PASS">
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:39:59 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:40:14 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14765" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Facility \ Storage \ Tank \ Potable \ Water]]>
+                <![CDATA[Service_Chain \ Business]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Business]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Business]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Business Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role in the water utility service chain. It contains all the components necessary to perform one of the support roles within in a water utility.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N/A]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:40:14 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:40:29 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14876" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Business \ Corporate]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Corporate]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Corporate]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Corporate Business Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A grouping / linking of major corporate support functions that enable the core business services to be provided for each of the types of business product schemes. This covers the corporate support functions which support more than one operational schemes and operational management area (district).]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[CE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:40:29 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:40:44 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14866" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Business \ Operational]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Operational]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Operational]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Operational Business Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A grouping / linking of major operational support functions that enable the core business services to be provided for each of the types of business product schemes. This covers the operational support functions which support schemes that are managed by one operational management area (district).]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[OL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:40:44 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:40:59 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14930" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Source]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Source]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Source]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Source Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role in the water utility service chain and contains all the components necessary to collect or transfer raw water and is part of a Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N/A]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:40:59 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:41:14 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Source \ Potable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Potable]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Potable]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Potable Source Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role in the water utility service chain and contains all the components necessary to collect or transfer raw water and is part of a Potable Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N/A]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:41:14 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:41:29 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14792" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Source \ Potable \ Water]]>
               </value>
             </param>
             <param index="1">
@@ -187,39 +280,1304 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[Potable Water Tank Storage Facility]]>
+                <![CDATA[Potable Water Source Service Chain]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[A collection of assets that provide reserve and emergency storage for (treated) potable water before it is distributed to customer to ensure not interrupted water supply (i.e.. due to a leak on the main) and ensure consistent water pressure. Type of tanks: Ground Level Tank or Elevated Tank.]]>
+                <![CDATA[A major stage that has a specific role (Potable Water Source) in the water utility service chain. It contains all the components necessary to collect and transfer raw water and is part of a Supply Scheme.]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[2440]]>
+                <![CDATA[10]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[ST]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[TA]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[_xlfn.CONCAT(G127,H127)]]>
+                <![CDATA[SE]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_ClassificationFacility -->
-      </class> <!-- testCases.EADMF26_28_TC_02 -->
-    </test> <!-- Test(failed)(failed)(failed)(failed)(failed)(failed) -->
-  </suite> <!-- Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Failed suite [Suite]]]]]] -->
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:41:29 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:41:43 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14854" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Source \ Non-Potable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Non-Potable]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Non-Potable]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Non-Potable Source Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role in the water utility service chain and contains all the components necessary to collect or transfer raw water and is part of a Non-Potable Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N/A]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:41:43 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:41:58 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14827" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Source \ Non-Potable \ Water]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Water]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Water]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Non-Potable Water Source Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role (Non Potable Source) in the water utility service chain. It contains all the components necessary to collect and transfer raw water and is part of a Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[SE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:41:58 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:42:13 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14804" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Source \ Non-Potable \ Irrigation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Irrigation]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Irrigation]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Non-Potable Irrigation Source Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role (Irrigation Source / Non Potable Source) in the water utility service chain. It contains all the components necessary to collect and transfer irrigation water as part of a Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[SE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:42:13 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:42:28 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Source \ Non-Potable \ Reuse]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Reuse]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Reuse]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Non-Potable Reuse Source Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role (Water Source) in the water utility service chain. It contains all the components necessary to collect and transfer reuse water and is part of a Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[SE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:42:28 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:42:43 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14775" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Fuel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Fuel]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Fuel]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Fuel Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[****Description to be developed****]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N/A]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:42:43 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:42:57 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14792" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Fuel \ Power]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Power]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Power]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Power Fuel Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[****Description to be developed****]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[FU]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:42:57 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:43:12 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14766" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Collection]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Collection]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Collection]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Collection Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role in the water utility service chain and contains all the components necessary to collect product and transfer from customers and is part of a Collection Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N/A]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:43:12 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:43:27 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14894" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Collection \ Wastewater]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wastewater]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Wastewater]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Wastewater Collection Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role (Wastewater Collection) in the water utility service chain. It contains all the components necessary to collect and transfer wastewater from customers and is part of a Collection Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[CN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:43:27 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:43:42 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14850" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Collection \ Drainage]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Drainage]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Drainage]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Drainage Collection Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role (Drainage Collection) in the water utility service chain. It contains all the components necessary to collect stormwater and transfer from customers and is part of a Collection Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[CN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:43:42 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:43:57 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Treatment]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Treatment]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Treatment]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Treatment Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role in the water utility service chain and contains all the components necessary to treat product to a required standard and can be part of a supply or Collection Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N/A]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:43:57 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:44:11 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14778" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Treatment \ Potable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Potable]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Potable]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Potable Treatment Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role in the water utility service chain and contains all the components necessary to treat product to required standards and is part of Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N/A]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:44:11 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:44:26 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14787" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Treatment \ Potable \ Water]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Water]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Water]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Potable Water Treatment Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role (Water Treatment) in the water utility service chain. It contains all the components necessary to treat raw water to potable standards and is part of Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[TT]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:44:26 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:44:41 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14794" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Treatment \ Non-Potable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Non-Potable]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Non-Potable]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Non-Potable Treatment Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role in the water utility service chain and contains all the components necessary to treat product to required standards as part of Non-Potable Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N/A]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:44:41 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:44:56 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14813" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Treatment \ Non-Potable \ Water]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Water]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Water]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Non-Potable Water Treatment Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role (Non-Potable Water Treatment) in the water utility service chain. It contains all the components necessary to treat raw water to required standards and is part of Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[TT]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:44:56 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:45:11 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Treatment \ Non-Potable \ Reuse]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Reuse]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Reuse]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Non-Potable Reuse Treatment Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role (Water Treatment) in the water utility service chain. It contains all the components necessary to treat reuse water to potable standards and is part of Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[TT]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:45:11 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:45:26 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14800" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Treatment \ Non-Potable \ Irrigation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Irrigation]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Irrigation]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Non-Potable Irrigation Treatment Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role (Irrigation Water Treatment) in the water utility service chain. It contains all the components necessary to treat raw water to required standards and is part of Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[TT]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:45:26 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:45:40 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14834" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Treatment \ Wastewater]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wastewater]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Wastewater]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Wastewater Treatment Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role (Wastewater Treatment) in the water utility service chain. It contains all the components necessary to treat wastewater to disposal standards and is part of a Collection Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[TT]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:45:40 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:45:55 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14942" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Treatment \ Drainage]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Drainage]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Drainage]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Drainage Treatment Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role (Drainage Treatment) in the water utility service chain. It contains all the components necessary to treat stormwater to disposal standards and is part of a Collection Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[TT]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:45:55 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:46:10 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14827" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Generation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Generation]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Generation]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Generation Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[****Description to be developed****]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N/A]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:46:10 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:46:25 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14842" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Generation \ Power]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Power]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Power]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Power Generation Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[****Description to be developed****]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[21]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[GE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:46:25 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:46:40 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14856" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Disposal]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Disposal]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Disposal]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Disposal Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role in the water utility service chain and contains all the components necessary to transfer product to the environment as part of the disposal part of a Collection Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N/A]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:46:40 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:46:55 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14917" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Disposal \ Wastewater]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wastewater]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Wastewater]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Wastewater Disposal Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role (Wastewater Disposal) in the water utility service chain. It contains all the components necessary to transfer treated wastewater products (liquids and solids) to customers (i.e. Reuse) or the environment and is part of a Collection Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[DL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:46:55 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:47:10 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14811" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Disposal \ Drainage]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Drainage]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Drainage]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Drainage Disposal Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role (Drainage Disposal) in the water utility service chain. It contains all the components necessary to transfer stormwater (liquids and solids) to the environment and is part of a Collection Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[DL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:47:10 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:47:25 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14921" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Distribution]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Distribution]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Distribution]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Distribution Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role in the utility's service chain and contains all the components necessary to deliver product to customers and is part of a Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N/A]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:47:25 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:47:39 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14832" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Distribution \ Potable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Potable]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Potable]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Potable Distribution Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role in the water utility service chain and contains all the components necessary to deliver product to customers and is part of a Potable Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N/A]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:47:39 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:47:54 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14930" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Distribution \ Potable \ Water]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Water]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Water]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Potable Water Distribution Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role (Potable Water Distribution) in the water utility service chain. It contains all the components necessary to deliver potable water to customers and is part of a Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[DN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:47:54 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:48:09 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14907" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Distribution \ Non-Potable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Non-Potable]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Non-Potable]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Non-Potable Distribution Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role in the water utility service chain and contains all the components necessary to deliver product to customers and is part of a Non-Potable Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N/A]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:48:09 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:48:24 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14950" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Distribution \ Non-Potable \ Water]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Water]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Water]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Non-Potable Water Distribution Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role (Non Potable Distribution) in the water utility service chain. It contains all the components necessary to deliver non potable water to customers and is part of a Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[DN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:48:24 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:48:39 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14865" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Distribution \ Non-Potable \ Irrigation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Irrigation]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Irrigation]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Non-Potable Irrigation Distribution Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role (Irrigation Distribution / Non Potable Distribution) in the water utility service chain. It contains all the components necessary to deliver irrigation water to customers and is part of a Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[DN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:48:39 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:48:54 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14925" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Distribution \ Non-Potable \ Reuse]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Reuse]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Reuse]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Non-Potable Reuse Distribution Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A major stage that has a specific role (Non-Potable Water Distribution) in the water utility service chain. It contains all the components necessary to deliver reuse water to customers and is part of a Supply Scheme.]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[DN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="verify_ClassificationServiceChain(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:48:54 IST" name="verify_ClassificationServiceChain" data-provider="ClassificationServiceChainData" finished-at="2025-01-17T14:49:09 IST" depends-on-methods="testCases.SC_level_DataValidation.Login" duration-ms="14981" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Service_Chain \ Distribution \ Power]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Power]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Power]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Power Distribution Service Chain]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[****Description to be developed****]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[DN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_ClassificationServiceChain -->
+        <test-method signature="LogOut()[pri:3, instance:testCases.SC_level_DataValidation@6fb365ed]" started-at="2025-01-17T14:49:09 IST" name="LogOut" finished-at="2025-01-17T14:49:10 IST" duration-ms="1183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOut -->
+      </class> <!-- testCases.SC_level_DataValidation -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

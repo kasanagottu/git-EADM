@@ -1,9 +1,11 @@
-/* TC Name: EADMF26_28_TC_02 (Sprint 1)
-
-
-   TC Description: Verify 166 classification records  created in Maximo for 'Facility' level classification 
-   ENV: Dev
+/* Sprint : 1 
  
+   User Story: EADMF26-28 (Configure Facility Level Classification)
+
+   TC Name: Facility level_classifications_validation (https://jira.watercorporation.com.au/browse/EADMF26-272)
+ 
+   TC Description: Verify 166 classification records  created in Maximo for 'Facility' level classification 
+    
  */
 
 package testCases;
@@ -17,7 +19,7 @@ import testBase.BaseClass;
 import utilities.CommonMethods;
 import utilities.DataProviders;
 
-public class EADMF26_28_TC_02 extends BaseClass{
+public class Facility_level_DataValidation extends BaseClass{
 	
 			public ClassificationsPage cp;
 					

@@ -1,13 +1,17 @@
-/* TC Name: EADMF26-24_TC_03 (Sprint 1)
-
-   TC Description: Verify 14 classification records created in Maximo for 'BUSINESS PRODUCT' level classification .
-   ENV: Dev
+/* Sprint : 1
  
+   User Story:EADMF26-24 (Configure Business and Business Product Level Classification)
+ 
+   TC Name: BUSINESS PRODUCT level data validation (https://jira.watercorporation.com.au/browse/EADMF26-268)
+   
+   TC Description: Verify 14 classification records created in Maximo for 'BUSINESS PRODUCT' level classification .
+   
  */
 
 package testCases;
 
 import org.openqa.selenium.By;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -17,7 +21,7 @@ import pageObjects.LoginPage;
 import testBase.BaseClass;
 import utilities.DataProviders;
 
-public class EADMF26_24_TC_03 extends BaseClass {
+public class BP_level_DataValidation extends BaseClass {
 	
 	public ClassificationsPage cp;
 	

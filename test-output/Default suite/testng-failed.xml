@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.EADMF26_28_TC_02">
+      <class name="testCases.FailedTestCase">
         <methods>
-          <include name="verify_ClassificationFacility" invocation-numbers="0"/>
           <include name="Login"/>
+          <include name="verify_ClassificationScheme" invocation-numbers="0"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.EADMF26_28_TC_02 -->
+      </class> <!-- testCases.FailedTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

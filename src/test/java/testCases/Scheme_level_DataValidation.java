@@ -1,12 +1,15 @@
-/* Test Case Name : EADMF26-27_TC_02 (Sprint 1)
-
-  Description: Verify 38 classification records created in Maximo for 'Service Chain' level classification .
- */
+/* Sprint : 1
+ 
+   User Story: EADMF26-26 (Configure Scheme Level Classification)
+ 
+   TC Name: Scheme level classification_data validation (https://jira.watercorporation.com.au/browse/EADMF26-270)
+  
+   TC Description: Verify 14 classification records created in Maximo for 'Scheme' level classification .
+  */
 
 package testCases;
 
 import org.testng.Assert;
-
 import org.testng.annotations.Test;
 
 import pageObjects.ClassificationsPage;
@@ -14,7 +17,7 @@ import testBase.BaseClass;
 import utilities.CommonMethods;
 import utilities.DataProviders;
 
-public class EADMF26_27_TC_02 extends BaseClass {
+public class Scheme_level_DataValidation extends BaseClass {
 	
 		public ClassificationsPage cp;
 				
@@ -23,11 +26,11 @@ public class EADMF26_27_TC_02 extends BaseClass {
 		{	
 			CommonMethods.verify_Login();
 		}
-			 
-		@Test(priority=2,dataProvider="ClassificationServiceChainData",dataProviderClass=DataProviders.class,dependsOnMethods= {"Login"}) //getting data provider from different class
-		public void verify_ClassificationServiceChain(String ClassificationPath,String Classification,String Desc,String ProdDesc,String ProdLongDesc,String Order,String ClassCode) throws InterruptedException {
 			
-			logger.info("***********Classification Service Chain Level Test Started***********");
+		@Test(priority=2,dataProvider="ClassificationSchemeData",dataProviderClass=DataProviders.class,dependsOnMethods= {"Login"}) //getting data provider from different class
+		public void verify_ClassificationScheme(String ClassificationPath,String Classification,String Desc,String ProdDesc,String ProdLongDesc,String Order) throws InterruptedException {
+			
+			logger.info("***********Classification Scheme Level Test Started***********");
 			
 			cp = new ClassificationsPage(driver);
 			Thread.sleep(1000);
@@ -72,7 +75,7 @@ public class EADMF26_27_TC_02 extends BaseClass {
 			
 			//Validating the Order Value
 			 String valOrder = cp.getOrder();
-			 if(Order!="N/A") {
+			 if(Order!="NA") {
 				 	
 			 }else if(valOrder.equals(Order)) 
 				  { 
@@ -86,23 +89,9 @@ public class EADMF26_27_TC_02 extends BaseClass {
 					 
 			 //Validating the Location
 			 boolean valLoc = cp.isLocationExists();
-			 Assert.assertTrue(valLoc);
 			 
-			//Validating the Classification Code
-			 String valClassCode = cp.getClassificationCode();
-			 if(ClassCode!="NA") {
-				 	
-			 }else if(valClassCode.equals(ClassCode)) 
-				  { 
-					 Assert.assertTrue(true);
-				  }
-				 else 
-				{
-				System.out.println("The Classification Code Value displayed as :"+valClassCode); 
-			    Assert.assertTrue(false);
-			    }
-					 
-			 logger.info("*********** Classification Service Chain Level Test Finished***********");
+			 Assert.assertTrue(valLoc);
+			 logger.info("*********** Classification Scheme Level Test Finished***********");
 			 	}
 
 		@Test(priority=3)
@@ -112,4 +101,8 @@ public class EADMF26_27_TC_02 extends BaseClass {
 		}
 		
 	}
+
+		
+
+
 

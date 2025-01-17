@@ -148,4 +148,31 @@ public class DataProviders {
 		
 	}
 
+	@DataProvider(name="InCorrectData")
+	public String [][] getdate() throws IOException
+	
+	{
+		String path=".\\testData\\InvalidData.xlsx";	
+			
+		Excelutility xlutl=new Excelutility(path);			
+			
+		int totalrows=xlutl.getRowCount("Sheet1");
+		int totalcols=xlutl.getCellCount("Sheet1",1);
+		
+		System.out.println("The no of rows are:"+totalrows);
+		System.out.println("The no of columns are:"+totalcols);
+		
+		String ClassificationData[][]=new String[totalrows][totalcols]; 
+		
+		for (int i=1;i<=totalrows;i++)		
+		{
+			for (int j=0;j<totalcols;j++)		
+			{
+				ClassificationData[i-1][j]=xlutl.getCellData("Sheet1", i, j); //1,0
+			}
+		}
+			
+		return ClassificationData; 
+		
+	}
 }

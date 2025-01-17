@@ -7,12 +7,8 @@
 	</listeners>
 
   <test thread-count="5" name="Test">
-    <classes>
-     
-   	<!-- 	     <class name="testCases.EADMF26_24_TC_03"/> 
-    			  <class name="testCases.EADMF26_26_TC_02"/>
-    			  <class name="testCases.EADMF26_27_TC_02"/> --> 
-    			  <class name="testCases.EADMF26_28_TC_02"/>
+    <classes>     
+  	    	 <class name="testCases.SC_level_DataValidation"/>     	    		     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.EADMF26_28_TC_02">
+      <class name="testCases.EADMF26_24_TC_03">
         <methods>
-          <include name="verify_ClassificationFacility" invocation-numbers="0 70 71 72 74 18 86 92 166 103 167 168 105 169 42 106 170 107 171 108 172 45 109 173 174 111 175 176 177 178 179 180 181 55 119 120 122 59 123 124 125"/>
-          <include name="Login"/>
+          <include name="verify_Classification_BusinessProduct" invocation-numbers="11 12 13"/>
           <include name="setup"/>
+          <include name="verify_Login"/>
         </methods>
-      </class> <!-- testCases.EADMF26_28_TC_02 -->
+      </class> <!-- testCases.EADMF26_24_TC_03 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
